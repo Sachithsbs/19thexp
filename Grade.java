@@ -11,13 +11,9 @@ public class Grade{
 
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
-
     System.out.print("How many grades (1 to 5)? ");
     int count = scanner.nextInt();
-
-
     double sum = 0.0;
-
     for (int i = 1; i <= count; i++) {
       System.out.print("Enter grade " + i + ": ");
       double grade = scanner.nextDouble();
@@ -27,7 +23,7 @@ public class Grade{
     double avg = sum / count;
     System.out.println("Average: " + avg);
     System.out.println("Letter grade: " + gradeFunction(avg));
-
+    System.out.ptintln("The pipeline succeded");
     scanner.close();
   }
 }
